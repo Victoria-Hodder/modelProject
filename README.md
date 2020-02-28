@@ -28,7 +28,7 @@ For this project I am using `pyenv` (you can read about this here: https://githu
 $ pyenv virtualenv 3.8.1 exampleenv 
 
 # activate environment
-$ pyenv activate nicevenv
+$ pyenv activate exampleenv
 
 ```
 
