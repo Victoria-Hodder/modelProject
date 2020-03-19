@@ -44,7 +44,7 @@ The app should now run on your local server. To test the different endpoints, pl
 
 ## Testing
 
-This app is not yet tested.
+This app has some tests which could be added to.
 
 ## Documentation
 
@@ -56,4 +56,4 @@ For PrettyPrinted resources: https://prettyprinted.com/
 
 ## Limitations
 
-This app is not yet tested
+Testing needs to be improved
