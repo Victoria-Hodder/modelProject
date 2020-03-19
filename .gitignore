@@ -4,3 +4,5 @@ geckodriver
 geckodriver.log
 *.db
 *.pyc
+
+SECRET_KEY = "h!abb!l$70lik%ji9lxo)jzpic8c(r)3nyd*l7e9acz0iy6hsr"
