@@ -30,6 +30,7 @@ class Language(models.Model):
 class Framework(models.Model):
     name = models.CharField(max_length=10)
     language = models.ForeignKey(Language, on_delete=models.CASCADE)
+    #ForeignKey represents the one to many relationship
 
     def __str__(self):
         return self.name
@@ -48,9 +49,22 @@ class Character(models.Model):
     def __str__(self):
         return self.name
 
+"""
+Notes:
+put many to many relationship on the class which has a "lower level" - in this case Movie is of higher importance.
+there's no column in the database so Django creates a new table
 
-#put many to many relationship on the class which has a "lower level" - in this case Movie is of higher importance.
-#there's no column in the database so Django creates a new table
 
-#what is unicode??  __str__/string formatting - preferred
-# could I add order_by so that it has a reverse order in the admin page??
+>>> avengeres = Movie.objects.get(name = 'Avengers')
+>>> avengeres
+<Movie: Avengers>
+>>> avengeres.character_set.all()
+<QuerySet [<Character: Captain America>, <Character: Thor>]>
+
+Use '_set' to access the characters of a movie because Movie class has no characters field
+
+
+what is unicode??  __str__/string formatting - preferred
+Could I add order_by so that it has a reverse order in the admin page??
+
+"""

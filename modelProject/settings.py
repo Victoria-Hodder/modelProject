@@ -72,6 +72,7 @@ WSGI_APPLICATION = 'modelProject.wsgi.application'
 
 
 # Database
+# Here you can change the database settings if you already have a database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
@@ -80,7 +81,6 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
